@@ -114,7 +114,7 @@ def sus_points(score):
              s += 1
        return s
     else:
-       return score"
+       return score
     # END PROBLEM 4
 
 
@@ -195,7 +195,9 @@ def always_roll(n):
     assert n >= 0 and n <= 10
 
     # BEGIN PROBLEM 6
-    "*** YOUR CODE HERE ***"
+    def strategy(score, opponent_score)
+        return n
+    return strategy
     # END PROBLEM 6
 
 
@@ -227,7 +229,8 @@ def is_always_roll(strategy, goal=GOAL):
     False
     """
     # BEGIN PROBLEM 7
-    "*** YOUR CODE HERE ***"
+    
+
     # END PROBLEM 7
 
 
