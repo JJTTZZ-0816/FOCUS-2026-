@@ -229,7 +229,13 @@ def is_always_roll(strategy, goal=GOAL):
     False
     """
     # BEGIN PROBLEM 7
-    
+    first = strategy(0,0)
+    for score in range(goal)
+        for opponent_score in range(goal)
+        current = strategy(score,opponent_score)
+        if current != first:
+           return False
+    return True
 
     # END PROBLEM 7
 
@@ -247,7 +253,8 @@ def make_averaged(original_function, times_called=1000):
     """
 
     # BEGIN PROBLEM 8
-    "*** YOUR CODE HERE ***"
+    
+         
     # END PROBLEM 8
 
 
