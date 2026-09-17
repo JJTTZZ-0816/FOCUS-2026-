@@ -30,7 +30,7 @@ def roll_dice(num_rolls, dice=six_sided):
            special = True
     if special == True:
        return 1
-    else ：
+    else:
        return total
     # END PROBLEM 1
 
@@ -64,7 +64,7 @@ def take_turn(num_rolls, player_score, opponent_score, dice=six_sided):
     assert num_rolls <= 10, "Cannot roll more than 10 dice."
     # BEGIN PROBLEM 3
     if num_rolls == 0:
-      return boar_brawl(player_score, opponent_score
+      return boar_brawl(player_score, opponent_score)
     else:
         return roll_dice(num_rolls, dice)
     # END PROBLEM 3
@@ -108,7 +108,7 @@ def num_factors(n):
 def sus_points(score):
     """Return the new score of a player taking into account the Sus Fuss rule."""
     # BEGIN PROBLEM 4
-    if num_factors(score) == 3 or num_factors(score) == 4：
+    if num_factors(score) == 3 or num_factors(score) == 4:
        s = score + 1
        while is_prime(s) == False:
              s += 1
@@ -195,7 +195,7 @@ def always_roll(n):
     assert n >= 0 and n <= 10
 
     # BEGIN PROBLEM 6
-    def strategy(score, opponent_score)
+    def strategy(score, opponent_score):
         return n
     return strategy
     # END PROBLEM 6
@@ -230,9 +230,9 @@ def is_always_roll(strategy, goal=GOAL):
     """
     # BEGIN PROBLEM 7
     first = strategy(0,0)
-    for score in range(goal)
-        for opponent_score in range(goal)
-        current = strategy(score,opponent_score)
+    for score in range(goal):
+        for opponent_score in range(goal):
+            current = strategy(score,opponent_score)
         if current != first:
            return False
     return True
@@ -253,7 +253,7 @@ def make_averaged(original_function, times_called=1000):
     """
 
     # BEGIN PROBLEM 8
-    def averaged(*args)
+    def averaged(*args):
         total = 0
         t = 0
         while t < times_called:
